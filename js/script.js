@@ -29,7 +29,7 @@ function bicicletta(){
   // console.log(arrBicycle[i]);
 
   const peso = arrBicycle[i]['peso'];
-  console.log(peso);
+  // console.log(peso);
   if (peso < smallBike) {
    smallBike = peso;
 
@@ -40,12 +40,12 @@ function bicicletta(){
 
 
 }
-//
-// function init(){
-//  bicicletta();
-// }
-//
-// $(document).ready(init);
+
+function init(){
+ bicicletta();
+}
+
+$(document).ready(init);
 
 
 
