@@ -139,8 +139,22 @@ function myFunction(){
   var indMin = arr[3];
   var indMax = arr[7];
   // console.log(arr);
-  const newArray = arr.filter(item => item >= indMin && item <= indMax );
+
+
+  //FILTER
+  // const newArray = arr.filter(item => item >= indMin && item <= indMax );
+  // console.log(newArray);
+
+
+  //FOREACH
+  const newArray = [];
+  arr.forEach((item, i) => {
+  if(item >= indMin && item <= indMax){
+    newArray.push(item);
+  }
+  });
   console.log(newArray);
+
 }
 
 $(myFunction);
